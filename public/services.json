@@ -1,0 +1,38 @@
+[
+   {
+      "name": "surgery",
+      "id": "1",
+      "description": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury, to help improve bodily function, appearance, or to repair unwanted ruptured areas.",
+      "img": "https://i.ibb.co/MR3sVst/sergary.jpg"
+   },
+   {
+      "name": "Gaynee and Obstetrics",
+      "id": "2",
+      "description": "Obstetrics and gynaecology or obstetrics and gynecology is the medical specialty that encompasses the two subspecialties of obstetrics and gynecology. It is commonly abbreviated as OB-GYN or OB/GYN in US English and Canadian English, and as obs and gynae or O&G in British English.",
+      "img": "https://i.ibb.co/XtJp94m/gaynee.png"
+   },
+   {
+      "name": "Padiatrics",
+      "id": "3",
+      "description": "Paediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents. The American Academy of Pediatrics recommends people seek pediatric care through the age of 21. In the United Kingdom, paediatrics covers patients until age 18",
+      "img": "https://i.ibb.co/Tqx7qVk/padiatrics.jpg"
+   },
+   {
+      "name": "Intervantional Padiatric",
+      "id": "4",
+      "description": "Interventional paediatric cardiology mainly involves dilatation of stenotic vessels or valves and occlusion of abnormal communications. Many transcatheter techniques—such as balloon dilatation, stent implantation, and coil occlusion—have been adapted from adult practice.",
+      "img": "https://i.ibb.co/k5Jc366/intervantional-padiatric.jpg"
+   },
+   {
+      "name": "Intervantional Hepatology",
+      "id": "5",
+      "description": "The field of hepatobiliary diseases has advanced enormously in the past 3 decades. The incorporation of new diagnostic and therapeutic interventions in clinical hepatology as well as liver transplantation has exponentially grown and specialty fields have emerged within the liver disease arena.",
+      "img": "https://i.ibb.co/HnK0kD3/hepatology.jpg"
+   },
+   {
+      "name": "Critical Care Nafrology Disease (CCND)",
+      "id": "6",
+      "description": "Because of the increase in serious kidney diseases, including end-stage renal disease, your role as a nephrologist, intensivist, surgeon, or critical care physician is quickly expanding. ",
+      "img": "https://i.ibb.co/RhpX2vw/nefrology.jpg"
+   }
+]

@@ -1,0 +1,110 @@
+[
+   {
+      "name": "Napa",
+      "id": "1",
+      "img": "https://bangla64.com/wp-content/uploads/2021/05/Napa-500-480x480.jpg",
+      "description": "Tablet",
+      "price": "0.80 Tk",
+      "subName": "Paracitamol",
+      "power": "500 mg"
+   },
+   {
+      "name": "Napa Extend",
+      "id": "2",
+      "img": "https://emedi.com.bd/wp-content/uploads/2020/09/Napa-Extend-Tablet-665-mg.jpg",
+      "description": "Tablet",
+      "price": "1.51 Tk",
+      "subName": "Paracitamol",
+      "power": "665 mg"
+   },
+   {
+      "name": "Sergel",
+      "id": "3",
+      "img": "https://www.hplbd.com/products/Sergel_Capsule_20mg.jpg",
+      "description": "Capsul",
+      "price": "6.44 TK",
+      "subName": "Esomiprazole",
+      "power": "20 mg"
+   },
+   {
+      "name": "Monus",
+      "id": "4",
+      "img": "https://ctgshop.com/images/items/83872-1.jpg",
+      "description": "Tablet",
+      "price": "14.40 TK",
+      "subName": "Montilukas",
+      "power": "10 mg"
+   },
+   {
+      "name": "MaxPro",
+      "id": "5",
+      "img": "https://sokolponno.com/wp-content/uploads/2021/04/17.jpg",
+      "description": "Tablet",
+      "price": "6.30 TK",
+      "subName": "Esomeprazole",
+      "power": "20 mg"
+   },
+   {
+      "name": "Pantonix",
+      "id": "6",
+      "img": "https://emedi.com.bd/wp-content/uploads/2020/09/Pantonix-40-Tablet.jpg",
+      "description": "Tablet",
+      "price": "6.08 Tk",
+      "subName": "Pantoprazole Sodium Sesquihydrate",
+      "power": "20 mg"
+   },
+   {
+      "name": "Fexo",
+      "id": "7",
+      "img": "https://squarepharma.com.bd/products/FEXO-120.jpg",
+      "description": "Tablet",
+      "price": "7 Tk",
+      "subName": "Fexofenadine",
+      "power": "120 mg"
+   },
+   {
+      "name": "Finix",
+      "id": "8",
+      "img": "https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-04-07_143347.239908finix20mgtablet_5ac5f60370004-.68175.jpg",
+      "description": "Tablet",
+      "price": "6.32 Tk",
+      "subName": "Rabaprazole",
+      "power": "20 mg"
+   },
+   {
+      "name": "Calbo -D",
+      "id": "9",
+      "img": "https://www.medicinestore.org/wp-content/uploads/2020/07/Calbo-500-tab-e1594794841118.jpg",
+      "description": "Tabllet",
+      "price": "189.00 Tk",
+      "subName": "Calcium + Vitamin D3",
+      "power": "500 mg"
+   },
+   {
+      "name": "Intimate",
+      "id": "10",
+      "img": "http://www.squarepharma.com.bd/products/Intimate-10_l.jpg",
+      "description": "Tablet",
+      "price": "31.60 Tk",
+      "subName": "Tadalafil",
+      "power": "10 mg"
+   },
+   {
+      "name": "Zimax",
+      "id": "11",
+      "img": "https://emedi.com.bd/wp-content/uploads/2020/09/Zimax-500mg.jpg",
+      "description": "tablet",
+      "price": "31.69 Tk",
+      "subName": "Azithromycin",
+      "power": "500 mg"
+   },
+   {
+      "name": "E-Cap",
+      "id": "12",
+      "img": "https://emedi.com.bd/wp-content/uploads/2020/09/E-Cap-400-Soft-Gelatin-Capsule.jpg",
+      "description": "Tablet",
+      "price": "5.85 Tk",
+      "subName": "Vitamin E",
+      "power": "400 mg"
+   }
+]
