@@ -37,13 +37,11 @@ const useLogIn = () => {
          .then(result => {
             setUser(result.user);
             history.push(redrct_url);
-            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
          })
-         .finally(() =>
-            setLoading(false))
+         .finally(() => setLoading(false))
          ;
    }
 
@@ -52,14 +50,11 @@ const useLogIn = () => {
          .then(result => {
             setUser(result.user)
             history.push(redrct_url);
-            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
          })
-         .finally(() => {
-            setLoading(false)
-         })
+         .finally(() => setLoading(false))
    }
 
    return {

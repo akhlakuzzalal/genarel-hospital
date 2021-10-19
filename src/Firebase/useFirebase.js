@@ -14,6 +14,7 @@ const useFirebase = () => {
 
    // Updat NAme
    const updateName = (name) => {
+      setLoading(true)
       updateProfile(auth.currentUser, {
          displayName: name
       })
@@ -23,39 +24,40 @@ const useFirebase = () => {
          .catch(error => {
             seterror(error.message)
          })
+         .finally(() => setLoading(false))
    };
 
    // Log in with Google
    const LogInwithGoogle = () => {
       seterror('')
+      setLoading(true)
       return signInWithPopup(auth, googleProvider)
    };
 
    // register with email and password
    const RegisterWithEmailPassword = (email, password, displayName) => {
       seterror('')
-
+      setLoading(true)
       createUserWithEmailAndPassword(auth, email, password)
          .then(result => {
             updateName(displayName);
             setUser(result.user)
-            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
          })
-         .finally(() => {
-            setLoading(false)
-         });
+         .finally(() => setLoading(false));
    };
    // Log In with email and password
    const logInWithEmailPassword = (email, password) => {
       seterror('')
+      setLoading(true)
       return signInWithEmailAndPassword(auth, email, password)
 
    };
 
    const logOut = () => {
+      setLoading(true)
       seterror('')
       signOut(auth)
          .then(() => setUser({}))
@@ -67,12 +69,12 @@ const useFirebase = () => {
       const unsubscribe = onAuthStateChanged(auth, user => {
          if (user) {
             setUser(user);
-            setLoading(false)
          }
          else {
             setUser({});
          }
       });
+      setLoading(false);
       return () => unsubscribe;
    }, []);
 
