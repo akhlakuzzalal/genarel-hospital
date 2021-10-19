@@ -3,7 +3,7 @@ import { useHistory, useLocation } from "react-router";
 import useAuth from "./useAuth";
 
 const useLogIn = () => {
-   const { setUser, seterror, logInWithEmailPassword, RegisterWithEmailPassword } = useAuth();
+   const { setUser, seterror, logInWithEmailPassword, RegisterWithEmailPassword, setLoading } = useAuth();
    const [email, setEmail] = useState('')
    const [password, setPassword] = useState('')
    const [displayName, setDisplayName] = useState()
@@ -37,10 +37,15 @@ const useLogIn = () => {
          .then(result => {
             setUser(result.user);
             history.push(redrct_url);
+            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
-         });
+         })
+         .finnaly(() =>
+            setLoading(false)
+         )
+         ;
    }
 
    return {

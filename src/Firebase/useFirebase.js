@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const useFirebase = () => {
    const [user, setUser] = useState({});
    const [error, seterror] = useState('');
+   const [loading, setLoading] = useState(true);
 
    initFirebase();
    const googleProvider = new GoogleAuthProvider();
@@ -30,9 +31,13 @@ const useFirebase = () => {
       signInWithPopup(auth, googleProvider)
          .then(result => {
             setUser(result.user)
+            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
+         })
+         .finally(() => {
+            setLoading(false)
          })
    };
 
@@ -44,9 +49,13 @@ const useFirebase = () => {
          .then(result => {
             updateName(displayName);
             setUser(result.user)
+            setLoading(true)
          })
          .catch(error => {
             seterror(error.message)
+         })
+         .finally(() => {
+            setLoading(false)
          });
    };
    // Log In with email and password
@@ -60,6 +69,9 @@ const useFirebase = () => {
       seterror('')
       signOut(auth)
          .then(() => setUser({}))
+         .finally(() => {
+            setLoading(false)
+         })
    };
 
    // Obsrve User State Changing
@@ -67,6 +79,7 @@ const useFirebase = () => {
       const unsubscribe = onAuthStateChanged(auth, user => {
          if (user) {
             setUser(user);
+            setLoading(false)
          }
          else {
             setUser({});
@@ -77,6 +90,8 @@ const useFirebase = () => {
 
 
    return {
+      loading,
+      setLoading,
       setUser,
       user,
       seterror,
