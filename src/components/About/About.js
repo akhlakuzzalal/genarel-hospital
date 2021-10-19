@@ -25,7 +25,7 @@ const About = () => {
          <div className='w-75 mx-auto py-4'>
             <div className='row row-cols-lg-2 row-cols-1 align-items-center custom p-2'>
                <div className='col'>
-                  <img height='200px' src={img} alt="" />
+                  <img width='100%' src={img} alt="" />
                </div>
                <div className='col'>
                   <h2>{name}</h2>
