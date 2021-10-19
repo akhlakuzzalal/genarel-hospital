@@ -6,6 +6,8 @@ import useAuth from '../hooks/useAuth';
 const PrivateRoute = ({ children, ...rest }) => {
    const { user, loading } = useAuth();
 
+   console.log(loading);
+
    if (loading) {
       return (
          <div className='mx-auto'>

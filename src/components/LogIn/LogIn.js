@@ -4,15 +4,16 @@ import useAuth from '../../hooks/useAuth';
 import useLogIn from '../../hooks/useLogIn';
 
 const LogIn = () => {
-   const { user, error, seterror, LogInwithGoogle } = useAuth();
+   const { user, error, seterror } = useAuth();
    const [isRegister, setIsRegister] = useState(false);
-   const { NameChange, emailChange, passChange, handleLogIn, handleRegister } = useLogIn();
+   const { NameChange, emailChange, passChange, handleLogIn, handleRegister, handleGoogle } = useLogIn();
 
 
    const ToggleCheakbox = (e) => {
       seterror('')
       setIsRegister(e.target.checked)
    };
+
 
 
    return (
@@ -56,7 +57,7 @@ const LogIn = () => {
                </Form>
             </div>
             <div className='w-50 my-3 mx-auto'>
-               <button className="btn btn-info mx-auto" onClick={LogInwithGoogle}>Log in Using Google</button>
+               <button className="btn btn-info mx-auto" onClick={handleGoogle}>Log in Using Google</button>
             </div>
             <h4 className="ms-4 text-danger">{error}</h4>
          </div>

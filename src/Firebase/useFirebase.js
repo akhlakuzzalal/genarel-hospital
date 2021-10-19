@@ -28,17 +28,7 @@ const useFirebase = () => {
    // Log in with Google
    const LogInwithGoogle = () => {
       seterror('')
-      signInWithPopup(auth, googleProvider)
-         .then(result => {
-            setUser(result.user)
-            setLoading(true)
-         })
-         .catch(error => {
-            seterror(error.message)
-         })
-         .finally(() => {
-            setLoading(false)
-         })
+      return signInWithPopup(auth, googleProvider)
    };
 
    // register with email and password
@@ -69,9 +59,7 @@ const useFirebase = () => {
       seterror('')
       signOut(auth)
          .then(() => setUser({}))
-         .finally(() => {
-            setLoading(false)
-         })
+         .finally(() => setLoading(false))
    };
 
    // Obsrve User State Changing

@@ -3,7 +3,7 @@ import { useHistory, useLocation } from "react-router";
 import useAuth from "./useAuth";
 
 const useLogIn = () => {
-   const { setUser, seterror, logInWithEmailPassword, RegisterWithEmailPassword, setLoading } = useAuth();
+   const { setUser, seterror, logInWithEmailPassword, RegisterWithEmailPassword, setLoading, LogInwithGoogle } = useAuth();
    const [email, setEmail] = useState('')
    const [password, setPassword] = useState('')
    const [displayName, setDisplayName] = useState()
@@ -42,10 +42,24 @@ const useLogIn = () => {
          .catch(error => {
             seterror(error.message)
          })
-         .finnaly(() =>
-            setLoading(false)
-         )
+         .finally(() =>
+            setLoading(false))
          ;
+   }
+
+   const handleGoogle = () => {
+      LogInwithGoogle()
+         .then(result => {
+            setUser(result.user)
+            history.push(redrct_url);
+            setLoading(true)
+         })
+         .catch(error => {
+            seterror(error.message)
+         })
+         .finally(() => {
+            setLoading(false)
+         })
    }
 
    return {
@@ -54,6 +68,7 @@ const useLogIn = () => {
       NameChange,
       passChange,
       emailChange,
+      handleGoogle
    }
 }
 
